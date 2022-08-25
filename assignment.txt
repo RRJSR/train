@@ -1,0 +1,359 @@
+1.From the following tables write a SQL query to find those orders where the order amount exists between 500 and 2000. Return ord_no, purch_amt, cust_name, city.
+
+Table:Order
+ord_no      purch_amt   ord_date    customer_id  salesman_id
+----------  ----------  ----------  -----------  -----------
+70001       150.5       2012-10-05  3005         5002
+70009       270.65      2012-09-10  3001         5005
+70002       65.26       2012-10-05  3002         5001
+70004       110.5       2012-08-17  3009         5003
+70007       948.5       2012-09-10  3005         5002
+70005       2400.6      2012-07-27  3007         5001
+70008       5760        2012-09-10  3002         5001
+70010       1983.43     2012-10-10  3004         5006
+70003       2480.4      2012-10-10  3009         5003
+70012       250.45      2012-06-27  3008         5002
+70011       75.29       2012-08-17  3003         5007
+70013       3045.6      2012-04-25  3002         5001
+
+Table:Customer
+customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
+        3008 | Julian Green   | London     |   300 |        5002
+        3004 | Fabian Johnson | Paris      |   300 |        5006
+        3009 | Geoff Cameron  | Berlin     |   100 |        5003
+        3003 | Jozy Altidor   | Moscow     |   200 |        5007
+        3001 | Brad Guzan     | London     |       |        5005
+		
+2.From the following tables write a SQL query to find salespeople who received commissions of more than 12 percent from the company. Return Customer Name, customer city, Salesman, commission.
+
+table: customer
+customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
+        3008 | Julian Green   | London     |   300 |        5002
+        3004 | Fabian Johnson | Paris      |   300 |        5006
+        3009 | Geoff Cameron  | Berlin     |   100 |        5003
+        3003 | Jozy Altidor   | Moscow     |   200 |        5007
+        3001 | Brad Guzan     | London     |       |        5005
+
+table: salesman
+ salesman_id |    name    |   city   | commission 
+-------------+------------+----------+------------
+        5001 | James Hoog | New York |       0.15
+        5002 | Nail Knite | Paris    |       0.13
+        5005 | Pit Alex   | London   |       0.11
+        5006 | Mc Lyon    | Paris    |       0.14
+        5007 | Paul Adam  | Rome     |       0.13
+        5003 | Lauson Hen | San Jose |       0.12
+
+3.From the following tables write a SQL query to locate those salespeople who do not live in the same city where their customers live and have received a commission of more than 12% from the company. Return Customer Name, customer city, Salesman, salesman city, commission.  
+
+table: customer
+customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
+        3008 | Julian Green   | London     |   300 |        5002
+        3004 | Fabian Johnson | Paris      |   300 |        5006
+        3009 | Geoff Cameron  | Berlin     |   100 |        5003
+        3003 | Jozy Altidor   | Moscow     |   200 |        5007
+        3001 | Brad Guzan     | London     |       |        5005
+
+
+table: salesman
+salesman_id |    name    |   city   | commission 
+-------------+------------+----------+------------
+        5001 | James Hoog | New York |       0.15
+        5002 | Nail Knite | Paris    |       0.13
+        5005 | Pit Alex   | London   |       0.11
+        5006 | Mc Lyon    | Paris    |       0.14
+        5007 | Paul Adam  | Rome     |       0.13
+        5003 | Lauson Hen | San Jose |       0.12
+
+4.Write a SQL statement to join the tables salesman, customer and orders so that the same column of each table appears once and only the relational rows are returned.
+
+table: orders
+ord_no      purch_amt   ord_date    customer_id  salesman_id
+----------  ----------  ----------  -----------  -----------
+70001       150.5       2012-10-05  3005         5002
+70009       270.65      2012-09-10  3001         5005
+70002       65.26       2012-10-05  3002         5001
+70004       110.5       2012-08-17  3009         5003
+70007       948.5       2012-09-10  3005         5002
+70005       2400.6      2012-07-27  3007         5001
+70008       5760        2012-09-10  3002         5001
+70010       1983.43     2012-10-10  3004         5006
+70003       2480.4      2012-10-10  3009         5003
+70012       250.45      2012-06-27  3008         5002
+70011       75.29       2012-08-17  3003         5007
+70013       3045.6      2012-04-25  3002         5001
+
+table: customer
+customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
+        3008 | Julian Green   | London     |   300 |        5002
+        3004 | Fabian Johnson | Paris      |   300 |        5006
+        3009 | Geoff Cameron  | Berlin     |   100 |        5003
+        3003 | Jozy Altidor   | Moscow     |   200 |        5007
+        3001 | Brad Guzan     | London     |       |        5005
+
+table : salesman
+salesman_id |    name    |   city   | commission 
+-------------+------------+----------+------------
+        5001 | James Hoog | New York |       0.15
+        5002 | Nail Knite | Paris    |       0.13
+        5005 | Pit Alex   | London   |       0.11
+        5006 | Mc Lyon    | Paris    |       0.14
+        5007 | Paul Adam  | Rome     |       0.13
+        5003 | Lauson Hen | San Jose |       0.12
+
+5.Write a SQL statement to make a report with customer name, city, order number, order date, and order amount in ascending order according to the order date to determine whether any of the existing customers have placed an order or not. 
+
+table: orders
+ord_no      purch_amt   ord_date    customer_id  salesman_id
+----------  ----------  ----------  -----------  -----------
+70001       150.5       2012-10-05  3005         5002
+70009       270.65      2012-09-10  3001         5005
+70002       65.26       2012-10-05  3002         5001
+70004       110.5       2012-08-17  3009         5003
+70007       948.5       2012-09-10  3005         5002
+70005       2400.6      2012-07-27  3007         5001
+70008       5760        2012-09-10  3002         5001
+70010       1983.43     2012-10-10  3004         5006
+70003       2480.4      2012-10-10  3009         5003
+70012       250.45      2012-06-27  3008         5002
+70011       75.29       2012-08-17  3003         5007
+70013       3045.6      2012-04-25  3002         5001
+
+table: customer
+customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
+        3008 | Julian Green   | London     |   300 |        5002
+        3004 | Fabian Johnson | Paris      |   300 |        5006
+        3009 | Geoff Cameron  | Berlin     |   100 |        5003
+        3003 | Jozy Altidor   | Moscow     |   200 |        5007
+        3001 | Brad Guzan     | London     |       |        5005
+
+6.SQL statement to generate a report with customer name, city, order number, order date, order amount, salesperson name, and commission to determine if any of the existing customers have not placed orders or if they have placed orders through their salesman or by themselves
+
+table: customer
+customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
+        3008 | Julian Green   | London     |   300 |        5002
+        3004 | Fabian Johnson | Paris      |   300 |        5006
+        3009 | Geoff Cameron  | Berlin     |   100 |        5003
+        3003 | Jozy Altidor   | Moscow     |   200 |        5007
+        3001 | Brad Guzan     | London     |       |        5005
+
+table: orders
+ord_no      purch_amt   ord_date    customer_id  salesman_id
+----------  ----------  ----------  -----------  -----------
+70001       150.5       2012-10-05  3005         5002
+70009       270.65      2012-09-10  3001         5005
+70002       65.26       2012-10-05  3002         5001
+70004       110.5       2012-08-17  3009         5003
+70007       948.5       2012-09-10  3005         5002
+70005       2400.6      2012-07-27  3007         5001
+70008       5760        2012-09-10  3002         5001
+70010       1983.43     2012-10-10  3004         5006
+70003       2480.4      2012-10-10  3009         5003
+70012       250.45      2012-06-27  3008         5002
+70011       75.29       2012-08-17  3003         5007
+70013       3045.6      2012-04-25  3002         5001
+
+table: salesman
+salesman_id |    name    |   city   | commission 
+-------------+------------+----------+------------
+        5001 | James Hoog | New York |       0.15
+        5002 | Nail Knite | Paris    |       0.13
+        5005 | Pit Alex   | London   |       0.11
+        5006 | Mc Lyon    | Paris    |       0.14
+        5007 | Paul Adam  | Rome     |       0.13
+        5003 | Lauson Hen | San Jose |       0.12
+
+7.Write a SQL statement to create a Cartesian product between salesperson and customer, i.e. each salesperson will appear for all customers and vice versa for that salesperson who belongs to that city
+
+table: salesman
+salesman_id |    name    |   city   | commission 
+-------------+------------+----------+------------
+        5001 | James Hoog | New York |       0.15
+        5002 | Nail Knite | Paris    |       0.13
+        5005 | Pit Alex   | London   |       0.11
+        5006 | Mc Lyon    | Paris    |       0.14
+        5007 | Paul Adam  | Rome     |       0.13
+        5003 | Lauson Hen | San Jose |       0.12
+
+table: customer
+customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
+        3008 | Julian Green   | London     |   300 |        5002
+        3004 | Fabian Johnson | Paris      |   300 |        5006
+        3009 | Geoff Cameron  | Berlin     |   100 |        5003
+        3003 | Jozy Altidor   | Moscow     |   200 |        5007
+        3001 | Brad Guzan     | London     |       |        5005
+
+8.From the following tables write a SQL query to find the most expensive product of each company. Return pro_name, pro_price and com_name
+
+table: company_mast
+COM_ID COM_NAME
+------ -------------
+    11 Samsung
+    12 iBall
+    13 Epsion
+    14 Zebronics
+    15 Asus
+    16 Frontech
+
+table: item_mast
+ PRO_ID PRO_NAME                       PRO_PRICE    PRO_COM
+------- ------------------------- -------------- ----------
+    101 Mother Board                    3200.00         15
+    102 Key Board                        450.00         16
+    103 ZIP drive                        250.00         14
+    104 Speaker                          550.00         16
+    105 Monitor                         5000.00         11
+    106 DVD drive                        900.00         12
+    107 CD drive                         800.00         12
+    108 Printer                         2600.00         13
+    109 Refill cartridge                 350.00         13
+    110 Mouse                            250.00         12
+
+9.From the following tables write a SQL query to find the names of departments where more than two employees are employed. Return dpt_name
+
+table: emp_department
+DPT_CODE DPT_NAME        DPT_ALLOTMENT
+-------- --------------- -------------
+      57 IT                      65000
+      63 Finance                 15000
+      47 HR                     240000
+      27 RD                      55000
+      89 QC                      75000
+
+table: emp_details
+EMP_IDNO EMP_FNAME       EMP_LNAME         EMP_DEPT
+--------- --------------- --------------- ----------
+   127323 Michale         Robbin                  57
+   526689 Carlos          Snares                  63
+   843795 Enric           Dosio                   57
+   328717 Jhon            Snares                  63
+   444527 Joseph          Dosni                   47
+   659831 Zanifer         Emily                   47
+   847674 Kuleswar        Sitaraman               57
+   748681 Henrey          Gabriel                 47
+   555935 Alex            Manuel                  57
+   539569 George          Mardy                   27
+   733843 Mario           Saule                   63
+   631548 Alan            Snappy                  27
+   839139 Maria           Foster                  57
+   
+10. From the following tables write a SQL query to find the departments with budgets more than Rs. 50000 and display the first name and last name of employees
+
+table: emp_department
+DPT_CODE DPT_NAME        DPT_ALLOTMENT
+-------- --------------- -------------
+      57 IT                      65000
+      63 Finance                 15000
+      47 HR                     240000
+      27 RD                      55000
+      89 QC                      75000
+	  
+table: emp_details
+EMP_IDNO EMP_FNAME       EMP_LNAME         EMP_DEPT
+--------- --------------- --------------- ----------
+   127323 Michale         Robbin                  57
+   526689 Carlos          Snares                  63
+   843795 Enric           Dosio                   57
+   328717 Jhon            Snares                  63
+   444527 Joseph          Dosni                   47
+   659831 Zanifer         Emily                   47
+   847674 Kuleswar        Sitaraman               57
+   748681 Henrey          Gabriel                 47
+   555935 Alex            Manuel                  57
+   539569 George          Mardy                   27
+   733843 Mario           Saule                   63
+   631548 Alan            Snappy                  27
+   839139 Maria           Foster                  57
+   
+11. Show the sales numbers for each movie that did better internationally rather than domestically
+
+Table: Movies
+Id	Title	Director	Year	Length_minutes
+1	Toy Story	John Lasseter	1995	81
+2	A Bug's Life	John Lasseter	1998	95
+3	Toy Story 2	John Lasseter	1999	93
+4	Monsters, Inc.	Pete Docter	2001	92
+5	Finding Nemo	Andrew Stanton	2003	107
+6	The Incredibles	Brad Bird	2004	116
+7	Cars	John Lasseter	2006	117
+8	Ratatouille	Brad Bird	2007	115
+9	WALL-E	Andrew Stanton	2008	104
+10	Up	Pete Docter	2009	101
+11	Toy Story 3	Lee Unkrich	2010	103
+12	Cars 2	John Lasseter	2011	120
+13	Brave	Brenda Chapman	2012	102
+14	Monsters University	Dan Scanlon	2013	110
+
+Table: Boxoffice
+Movie_id	Rating	Domestic_sales	International_sales
+5	8.2	380843261	555900000
+14	7.4	268492764	475066843
+8	8	206445654	417277164
+12	6.4	191452396	368400000
+3	7.9	245852179	239163000
+6	8	261441092	370001000
+9	8.5	223808164	297503696
+11	8.4	415004880	648167031
+1	8.3	191796233	170162503
+7	7.2	244082982	217900167
+10	8.3	293004164	438338580
+4	8.1	289916256	272900000
+2	7.2	162798565	200600000
+13	7.2	237283207	301700000
+
+--
+12.Query to find Second Highest Salary of Employee?(click for explaination)
+
+13.Query to find duplicate rows in table?
+
+14.How to fetch  monthly Salary of Employee if annual salary is given?
+
+15.What is the Query to fetch last record from the table?
+
+16.How to get 3 Highest salaries records from Employee table?
+
+17.How to Display Even rows in Employee table?
+
+18.How to fetch 3rd highest salary using Rank Function?
+
+19.Display first 50% records from Employee table?
+
+20.Find Query to get information of Employee where Employee is not assigned to the department
+
+21.How to fetch all the records from Employee whose joining year is  2017?
+
+22.What is SQL Query to find maximum salary of each department?
+
+23.How Do you find all Employees with its managers?(Consider there is manager id also in Employee table)
+
+24..How to add the email validation using only one query?
+
+25.Display the name of employees who have joined in 2016 and salary is greater than 10000?
