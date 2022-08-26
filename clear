@@ -1,0 +1,206 @@
+[33mcommit c603a50d16402fb4311d844c531c8301ed06b5b1[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/bhimbisara[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mbhimbisara[m[33m)[m
+Merge: 247170e 0f339f2
+Author: RRJSR <110885092+RRJSR@users.noreply.github.com>
+Date:   Fri Aug 26 12:00:01 2022 +0530
+
+    Merge pull request #5 from RRJSR/new_branch1
+    
+    added a new file
+
+[33mcommit 247170e184ee8fe1890793c36fe8d03d4c589e0a[m[33m ([m[1;31morigin/dev_test1[m[33m, [m[1;31morigin/dev_test[m[33m)[m
+Merge: 567c1ed 6bc0999
+Author: Kaushik99drs <84119610+Kaushik99drs@users.noreply.github.com>
+Date:   Fri Aug 26 11:53:25 2022 +0530
+
+    Merge pull request #11 from RRJSR/dev_test
+    
+    Dev test
+
+[33mcommit 6bc0999bd4e7f959be6a5114133e1dfe2b674b05[m
+Merge: 049ed2f 567c1ed
+Author: unknown <kaushikdeka1999@gmail.com>
+Date:   Fri Aug 26 11:51:58 2022 +0530
+
+    add
+
+[33mcommit 049ed2f1414506803190649510be0a592051fca9[m
+Author: unknown <kaushikdeka1999@gmail.com>
+Date:   Fri Aug 26 11:50:07 2022 +0530
+
+    add line
+
+[33mcommit 567c1ed04b80e40d6ff251ec47fbf95a124c3264[m
+Merge: 467c6e6 6aa1676
+Author: RRJSR <110885092+RRJSR@users.noreply.github.com>
+Date:   Fri Aug 26 11:47:39 2022 +0530
+
+    Merge pull request #10 from RRJSR/side5
+    
+    Side5
+
+[33mcommit 6aa1676f101b60307c58ff14308663c3534c4ffe[m[33m ([m[1;31morigin/side5[m[33m)[m
+Author: RRJSR <rahulkumar.singh@hashmapinc.com>
+Date:   Fri Aug 26 11:46:43 2022 +0530
+
+    done again
+
+[33mcommit a4cb2e83e839d4c0b98f09ad05091000876ff47f[m
+Merge: f1bbe6e 467c6e6
+Author: RRJSR <rahulkumar.singh@hashmapinc.com>
+Date:   Fri Aug 26 11:37:54 2022 +0530
+
+    done
+
+[33mcommit f1bbe6e34801626ab80cb80981f57ec90bb52b4f[m
+Author: RRJSR <rahulkumar.singh@hashmapinc.com>
+Date:   Fri Aug 26 11:32:56 2022 +0530
+
+    made by rahul
+
+[33mcommit 467c6e6765a879a72376f25f20873dcfec2b4760[m
+Merge: d64185a 4869a9a
+Author: Kaushik99drs <84119610+Kaushik99drs@users.noreply.github.com>
+Date:   Fri Aug 26 11:30:20 2022 +0530
+
+    Merge pull request #9 from RRJSR/dev_test
+    
+    Dev test
+
+[33mcommit 4869a9a05958da6436f5de6d76c8200cfe43c029[m
+Author: unknown <kaushikdeka1999@gmail.com>
+Date:   Fri Aug 26 11:29:10 2022 +0530
+
+    new line
+
+[33mcommit 2346221f1bbbb6228dcd408c0c7b4b0dd48dc750[m
+Author: unknown <kaushikdeka1999@gmail.com>
+Date:   Fri Aug 26 11:27:09 2022 +0530
+
+    add new line
+
+[33mcommit ec49767ebda1ef1fda23d83e7eb58ef2c8cb7c55[m
+Merge: d64185a 7206a8a
+Author: Metta Jagadeesh <41304408+jagadeeshic@users.noreply.github.com>
+Date:   Fri Aug 26 11:02:36 2022 +0530
+
+    Merge pull request #7 from RRJSR/class_one
+    
+    Class one
+
+[33mcommit 7206a8ad569859982c5128712dba29c09ea91fc7[m[33m ([m[1;31morigin/class_one[m[33m)[m
+Merge: bbafb04 d64185a
+Author: jagadeeshic <jagadeeshjai334869@gmail.com>
+Date:   Fri Aug 26 10:52:44 2022 +0530
+
+    Merge branch 'main' of https://github.com/RRJSR/train into class_one
+
+[33mcommit bbafb04733960216956bb14d9c1f24b3d02f13ba[m
+Author: jagadeeshic <jagadeeshjai334869@gmail.com>
+Date:   Fri Aug 26 10:48:25 2022 +0530
+
+    Commit-3
+
+[33mcommit d64185add6f04d6817be1a79241246463729ce85[m
+Merge: 4765c2c 647fa4b
+Author: RRJSR <110885092+RRJSR@users.noreply.github.com>
+Date:   Fri Aug 26 10:45:44 2022 +0530
+
+    Merge pull request #6 from RRJSR/side5
+    
+    New file created
+
+[33mcommit 647fa4b18dc2e609e5282da5d14e1dea25e1fe14[m
+Author: RRJSR <rahulkumar.singh@hashmapinc.com>
+Date:   Fri Aug 26 10:43:29 2022 +0530
+
+    new file created
+
+[33mcommit 0f339f249d2ad1f3a52c07ca4bfdfdceeeaea23d[m[33m ([m[1;31morigin/new_branch1[m[33m)[m
+Author: harsh-212 <harsh.dubey@hashmapinc.com>
+Date:   Fri Aug 26 10:10:11 2022 +0530
+
+    added a new file
+
+[33mcommit 4765c2c6b4c87d669fc51d5447410415eca835d4[m[33m ([m[1;31morigin/side2[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: jagadeeshic <jagadeeshjai334869@gmail.com>
+Date:   Thu Aug 25 19:09:34 2022 +0530
+
+    Second_Commit
+
+[33mcommit b9e693fb624c4df8f9f3bb26a733662d26d9fa00[m
+Author: jagadeeshic <jagadeeshjai334869@gmail.com>
+Date:   Thu Aug 25 18:29:46 2022 +0530
+
+    commit_1
+
+[33mcommit ecb7111c18eea2bba69a878a116a5ff2eb784b1f[m
+Author: jagadeeshic <jagadeeshjai334869@gmail.com>
+Date:   Thu Aug 25 18:29:31 2022 +0530
+
+    first_commit
+
+[33mcommit dd3062fe9ef415b6f15aefacdad07fc620f0cfab[m
+Merge: 98cad13 e02043f
+Author: RRJSR <110885092+RRJSR@users.noreply.github.com>
+Date:   Tue Aug 23 11:31:27 2022 +0530
+
+    Merge pull request #4 from RRJSR/main
+    
+    done
+
+[33mcommit e02043fd842b412189ad39336c2118ebc5232431[m
+Merge: 2e44257 98cad13
+Author: RRJSR <110885092+RRJSR@users.noreply.github.com>
+Date:   Tue Aug 23 11:30:42 2022 +0530
+
+    Merge pull request #3 from RRJSR/side1
+    
+    done
+
+[33mcommit 98cad1397d9e715f590f36bb849757225f37724c[m
+Author: RRJSR <rahulkumar.singh@hashmapinc.com>
+Date:   Tue Aug 23 11:29:54 2022 +0530
+
+    done
+
+[33mcommit 2e442571d87c96ff0d2e4cbc3100fbb0dc6c0fa1[m
+Author: RRJSR <rahulkumar.singh@hashmapinc.com>
+Date:   Tue Aug 23 11:27:36 2022 +0530
+
+    file deleted
+
+[33mcommit c94ed30e3807a17c52a18c04b3315663d72fd539[m
+Merge: 8ba9757 b96ac4b
+Author: RRJSR <110885092+RRJSR@users.noreply.github.com>
+Date:   Tue Aug 23 11:23:17 2022 +0530
+
+    Merge pull request #2 from RRJSR/side1
+    
+    file 1 added
+
+[33mcommit b96ac4bd7335c4d36ea68b080d538b5d150408de[m
+Author: RRJSR <rahulkumar.singh@hashmapinc.com>
+Date:   Tue Aug 23 11:19:10 2022 +0530
+
+    file 1 added
+
+[33mcommit 8ba9757f20466681d0e879ba20877624a86e648f[m
+Merge: c4f6866 3cbf3ba
+Author: RRJSR <110885092+RRJSR@users.noreply.github.com>
+Date:   Tue Aug 23 11:13:05 2022 +0530
+
+    Merge pull request #1 from RRJSR/side1
+    
+    new file added
+
+[33mcommit 3cbf3bab12fe1192fe9546a676e8c3f7cd490005[m
+Author: RRJSR <rahulkumar.singh@hashmapinc.com>
+Date:   Tue Aug 23 11:11:08 2022 +0530
+
+    ne file added
+
+[33mcommit c4f6866d210274fa57d89e297429ee5e9380fb46[m
+Author: RRJSR <110885092+RRJSR@users.noreply.github.com>
+Date:   Tue Aug 23 11:06:07 2022 +0530
+
+    Create README.md

@@ -11,3 +11,6 @@ Basic Git Commands:
         Git Merge Command
         Git log command
         Git remote command
+
+	Git squash
+	Git stash
