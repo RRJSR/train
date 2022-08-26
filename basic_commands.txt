@@ -1,0 +1,13 @@
+Basic Git Commands:
+        Git Config command
+        Git init command
+        Git clone command
+        Git add command
+        Git commit command
+        Git status command
+        Git push Command
+        Git pull command
+        Git Branch Command
+        Git Merge Command
+        Git log command
+        Git remote command
